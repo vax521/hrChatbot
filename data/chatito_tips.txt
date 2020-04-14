@@ -1,0 +1,23 @@
+Entities are the way to define keywords that wrap sentence variations and attach some properties to them.
+ There are three types of entities: intent, slot and alias.
+
+意图 使用 % 定义
+    %[greet]('training': '2', 'testing': '1')
+        hello
+        hi
+        hola
+        salute
+
+槽slot 使用@定义
+    @[name]
+        Janis
+        Bob
+
+方言 使用~定义
+%[greet]
+    ~[hi] ~[how are you?]
+
+~[hi]
+    hi
+    hey
+
